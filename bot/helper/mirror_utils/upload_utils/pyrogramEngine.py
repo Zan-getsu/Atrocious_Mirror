@@ -87,11 +87,6 @@ class TgUploader:
         
         BOT_PM_X = get_bot_pm(user_id_)
         
-        if user_id_ != OWNER_ID:
-            cap_mono = f"Leecher ID: <code>{user_id_}</code>\n\n{file_}"
-        else:
-            pass
-        
         new_path = ospath.join(dirpath, file_)
         osrename(up_path, new_path)
         up_path = new_path
